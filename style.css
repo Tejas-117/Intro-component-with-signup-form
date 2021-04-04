@@ -46,7 +46,7 @@ body{
    background-color: var(--Blue);
    border: var(--Blue);
    color: white;
-   padding: 4% 15%;
+   /* padding: 4% 15%; */
    border-radius: 8px;
    outline: none;
    cursor: pointer;
@@ -74,6 +74,9 @@ input{
 }
 input:focus{
    border: 1.6px solid var(--Blue);
+}
+.claim{
+   font-family: inherit;
 }
 @media (max-width: 380px){
    input{
@@ -153,8 +156,8 @@ input:focus{
       margin-left: 62%;
    }
    .claim{
+      width: 110%;
       margin: 0 auto;
-      margin-left: 8%;
    }
 }
 
