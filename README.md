@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://your-solution-url.com)
+- [Solution URL](https://github.com/Tejas-117/Intro-component-with-signup-form)
 - [Live Site URL](https://tejas-117.github.io/Intro-component-with-signup-form/)
 
 ## My process
