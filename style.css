@@ -1,0 +1,166 @@
+/* error icons aren't added in input fields */
+
+:root{
+   /* ### Primary */ 
+  --Red: hsl(0, 100%, 74%);
+  --Green: hsl(154, 59%, 51%);
+
+  /* ### Accent */
+  --Blue: hsl(248, 32%, 49%);
+
+  /* ### Neutral */
+  --DarkBlue: hsl(249, 10%, 26%) ;
+  --GrayishBlue: hsl(246, 25%, 77%);
+}
+html{
+   font-size: 16px;
+}
+body{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-image: url(./images/bg-intro-mobile.png);
+   background-color: var(--Red);
+}
+
+/* main-container styling */
+.main-container{
+   width: 100vw;
+   margin: 10%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+/* text-container */
+.text-container{
+   text-align: center;
+   color: white;
+   margin-bottom: 8%;
+}
+.trial{
+   background-color: var(--Blue);
+   border: var(--Blue);
+   color: white;
+   padding: 4% 15%;
+   border-radius: 8px;
+   outline: none;
+   cursor: pointer;
+}
+.try-msg{
+   font-weight: 700;
+}
+/* form-container */
+.form-container{
+   background-color: white;
+   margin-top: 8%;
+   padding: 7%;
+   border-radius: 10px;
+   text-align: center;
+}
+input{
+   border: solid 1px var(--GrayishBlue);
+   border-radius: 5px;
+   margin-bottom: 3%;
+   padding: 3% 35% 3% 5%;
+   color: var(--DarkBlue);
+   font-weight: 600;
+   width: 40%;
+   outline:  none;
+}
+input:focus{
+   border: 1.6px solid var(--Blue);
+}
+@media (max-width: 380px){
+   input{
+      width: 70%;
+      padding: 3% 15% 3% 5%;
+   }
+}
+.claim{
+   background-color: var(--Green);
+   color: white;
+   padding: 4% 15%;
+   font-weight: 700;
+   border: var(--Green);
+   border-radius: 5px;
+   outline: none;
+   cursor: pointer;
+}
+.terms{
+   color: var(--GrayishBlue);
+   font-size: 0.8rem;
+   font-weight: 400;
+}
+.tns{
+   color: var(--Red);
+}
+/* styling error symbol and msg */
+.text{
+   display: none;
+}
+.error{
+   display: block;
+   margin-bottom: 3%;
+   font-style: italic;
+   font-size: 10px;
+   color: var(--Red);
+   margin-left: 40%;
+}
+.input-error{
+   border: 1.6px solid var(--Red);
+}
+
+/* for desktop */
+@media only screen and (min-width: 900px){
+   .main-container{
+      flex-direction: row;
+      margin: 4%;
+   }
+   .text-container{
+      width: 40%;
+      margin: 5%;
+      text-align: left;
+   }
+   .heading{
+      font-size: 3.5rem;
+   }
+   .paragraph{
+      font-size: 1.4rem;
+   }
+   .form-and-button{
+      width: 40%;
+   }
+   .trial{
+      width: 100%;
+   }
+   .trial-msg{
+      font-size: 1.2rem;
+   }
+   form{
+      width: 90%;
+      margin: 0 auto;
+      margin-left: 0;
+   }
+   input{
+      width: 70%;
+   }
+   .error{
+      margin-left: 62%;
+   }
+   .claim{
+      margin: 0 auto;
+      margin-left: 8%;
+   }
+}
+
+/* for tablets */
+@media only screen and (min-width: 500px) and (max-width: 900px){
+   .trial{
+      width: 100%;
+   }
+}
